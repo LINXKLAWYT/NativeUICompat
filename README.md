@@ -1,40 +1,72 @@
-# NativeUICompat
+# NativeUICompat (Source Code)
 
-NativeUICompat is an open-source compatibility library designed to bring a modern, minimal, and ScriptHookVDotNet 3-friendly menu framework for GTA V mod developers.
+NativeUICompat is a modern, lightweight, and fully open-source menu framework created for **ScriptHookVDotNet 3**.  
+It is designed to replace the outdated NativeUI library with a cleaner, simpler, and more stable codebase that works reliably with the current versions of SHVDN3.
 
-This framework is:
-
-- ✔ Lightweight  
-- ✔ Fully open-source  
-- ✔ Optimized for SHVDN 3.7+  
-- ✔ Compatible with GTA V (latest Steam/Epic/RGL versions)  
-- ✔ Designed for beginners and advanced developers
-
-This library is **not a drop-in replacement** for the old NativeUI — instead it provides a clean, modernized structure for building custom menu systems in GTA V scripts.
+This repository contains the full **source code** for the NativeUICompat library.
 
 ---
 
-## Installation
-
-Download the latest **NativeUICompat.dll** from the releases page and place it in:
-
-Grand Theft Auto V/scripts/
-
-Mods that use NativeUICompat should place it next to their main `.dll` script.
+## 📚 Features
+- Simple and modular menu system  
+- Menu items:  
+  - List items  
+  - Checkbox items  
+  - Separator items  
+- Keyboard/controller input support  
+- Customizable title bar  
+- Lightweight rendering  
+- Zero dependencies aside from SHVDN3  
+- 100% open source and free to use in any SHVDN3 mod
 
 ---
 
-## 🔧 Development Usage
+## ⚙️ Build Requirements
+To build the DLL yourself, you need:
 
-1. Reference `NativeUICompat.dll` inside your Visual Studio project.  
-2. Use:
-`
-using NativeUICompat; 
-`
-3. Create a menu using: `
-var menu = new Core.Menu("Example Menu");
-menu.AddItem(new Core.MenuItem("Button Example"));` 
+### ✔ Visual Studio 2022 Community (recommended)  
+Workload needed:  
+- **.NET desktop development**
 
-4. Ensure your mod builds for: 
-`Platform: x64
-.NET Framework: 4.8`
+### ✔ .NET Framework 4.8 Developer Pack
+
+### ✔ ScriptHookVDotNet 3 (Stable or Nightly)  
+Place the SHVDN3 DLLs inside:
+NativeUICompat\Dependencies\
+
+Required files:
+- `ScriptHookVDotNet3.dll`
+
+---
+
+## 🛠 Building the Project
+1. Open `NativeUICompat.sln` in Visual Studio.  
+2. Set the configuration to:  
+   Release | x64
+3. Build the solution.  
+4. The compiled DLL will appear in:
+NativeUICompat\bin\x64\Release\NativeUICompat.dll
+
+---
+
+## 🤝 Contributing
+Contributions are welcome!  
+You can submit:
+- Bug fixes  
+- Improvements  
+- New item types  
+- Rendering enhancements  
+- Documentation improvements  
+
+Please open a pull request on GitHub.
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**, allowing free use in any mod—open or closed source.
+
+---
+
+## ⭐ Support the Project
+If this project helped you, consider giving the repository a ⭐ on GitHub.  
+Every star helps keep the project alive and visible!

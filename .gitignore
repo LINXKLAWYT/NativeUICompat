@@ -1,0 +1,21 @@
+# Build artifacts
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Backups
+*.bak
+*.tmp
+*.temp
+*.old
+
+# Logs
+*.log
+
+# OS trash
+Thumbs.db
+.DS_Store

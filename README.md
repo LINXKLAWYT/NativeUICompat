@@ -28,14 +28,13 @@ Mods that use NativeUICompat should place it next to their main `.dll` script.
 
 1. Reference `NativeUICompat.dll` inside your Visual Studio project.  
 2. Use:
-
-```csharp
-using NativeUICompat;
-
-3. Create a menu using:
+`
+using NativeUICompat; 
+`
+3. Create a menu using: `
 var menu = new Core.Menu("Example Menu");
-menu.AddItem(new Core.MenuItem("Button Example"));
+menu.AddItem(new Core.MenuItem("Button Example"));` 
 
 4. Ensure your mod builds for: 
-Platform: x64
-.NET Framework: 4.8
+`Platform: x64
+.NET Framework: 4.8`
